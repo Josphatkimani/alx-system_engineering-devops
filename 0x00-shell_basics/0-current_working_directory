@@ -1,0 +1,4 @@
+#!/bin/bash
+actual_path=$(pwd)
+absolute_path=$(realpath "actual_path")
+echo "$absolute_path"
