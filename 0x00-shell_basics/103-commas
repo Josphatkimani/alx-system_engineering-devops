@@ -1,2 +1,2 @@
 #!/bin/bash
-ls -a1p | sed ':a;N;$!ba;s/\n/, /g' | sed 's/\([[:alnum:]]\)/\n\1/g' | sort | tr -d '\n' && echo
+printf "%s\n" . .. $(ls -A1 | sort -k1.2n -k1) | awk '{printf "%s, ", $0}' && echo
