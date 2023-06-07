@@ -1,2 +1,2 @@
 #!/bin/bash
-printf "%s\n" . .. $(ls -A1 | sort -k1.2n -k1) | awk '{printf "%s, ", $0}' && echo
+ls -1A | grep -E "^[0-9A-Za-z]" | { echo -n "./, ../, "; sort; } | paste -sd ',' -; echo
