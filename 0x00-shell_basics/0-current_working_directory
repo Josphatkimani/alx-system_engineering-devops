@@ -1,3 +1,2 @@
 #!/bin/bash
-actual_path=$(pwd)
-echo "$actual_path"
+pwd
