@@ -1,0 +1,2 @@
+#!/bin/bash
+ls -a1p | sed ':a;N;$!ba;s/\n/, /g' | sed 's/\([[:alnum:]]\)/\n\1/g' | sort | tr -d '\n' && echo
