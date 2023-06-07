@@ -1,2 +1,2 @@
 #!/bin/bash
-ls -1A | grep -E "^[0-9A-Za-z]" | { echo -n "./, ../, "; sort; } | paste -sd ',' -; echo
+ls -amvp
