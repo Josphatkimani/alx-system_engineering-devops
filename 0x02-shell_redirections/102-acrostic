@@ -1,2 +1,2 @@
 #!/bin/bash
-awk '{printf "%s", substr($0, 1, 1)} END{print ""}'
+cut -с 1 | paste -s -d ''
